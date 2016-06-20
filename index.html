@@ -36,6 +36,13 @@
                             <h4>Quiero mi auto usado</h4>
                         </div>
                     </div>
+                    <div class="swiper-slide" style="background-image:url(sources/images/banner02.jpg)">
+                        <div class="container">
+                            <h2>Comprar un auto seminuevo también es estrenar</h2>
+                            <h3>Crédito entre particulares</h3>
+                            <h4>Quiero mi auto usado</h4>
+                        </div>
+                    </div>
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination swiper-pagination-white"></div>
@@ -221,10 +228,72 @@
                 </div>
             </div>
         </section>
+
+
+        <section id="remate">
+            <div class="container">
+                <h2>QUE NADA TE SEPARE DE TU NUEVO AUTO USADO</h2>
+                <button class="center-block">QUIERO MI AUTO NUEVO USADO</button>
+            </div>
+        </section>
+
+
+        <footer>
+
+        </footer>
+
         <script type="text/javascript" src="js/libs/jquery.min.js"></script>
         <script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/libs/swiper.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async="" defer=""></script>
+        <script>
+            $(document).ready(function(){
+
+                //Inicializar Swiper
+                var swiper = new Swiper('#slider .swiper-container', {
+                    pagination: '.swiper-pagination',
+                    paginationClickable: true,
+                    nextButton: '#slider .swiper-button-next',
+                    prevButton: '#slider .swiper-button-prev',
+                    spaceBetween: 20,
+                    effect: 'fade',
+                    loop : true,
+                    autoplay: 4500
+                });
+
+
+                var mobile = 720;
+
+                $(window).resize(function(){
+                    resizeSwiper();
+                });
+
+                $(window).ready(function(){
+                    resizeSwiper();
+                });
+
+                resizeSwiper = function(){
+                    if($(window).width() <= 768){
+                        swiper2 = null;
+                        swiper2 = new Swiper('#packages-home .swiper-container', {
+                            slidesPerView: 1,
+                            nextButton: '#packages-home .swiper-button-next',
+                            prevButton: '#packages-home .swiper-button-prev',
+                            spaceBetween: 30,
+                            autoplay: 3500
+                        });
+                    }else{
+                        swiper2 = new Swiper('#packages-home .swiper-container', {
+                            slidesPerView: 3,
+                            nextButton: '#packages-home .swiper-button-next',
+                            prevButton: '#packages-home .swiper-button-prev',
+                            spaceBetween: 30,
+                            autoplay: 3500
+                        });
+                    }
+                }
+            });
+        </script>
     </body>
 </html>

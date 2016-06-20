@@ -1,0 +1,318 @@
+@lightBlue: #009FCB;
+@skyBlue: #0C76B8;
+@medimBlue: #0F549F;
+@ultramarine: #063773;
+@DarkBlue: #0B2340;
+@gray: #5B6062;
+
+body{
+  font-family: "apertura",sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: @gray;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: "apertura",sans-serif;
+  text-align: center;
+}
+
+*{
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  display: block;
+  transition: all .12s ease;
+}
+
+img{
+  width: 100%;
+}
+
+.row{
+  margin: 0;
+  padding: 0;
+}
+
+
+@import "media";
+
+
+header#main-header {
+  .navbar{
+    background: @DarkBlue;
+    color: white;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+  }
+  .navbar-brand{
+    height: auto;
+    max-width: 230px;
+  }
+}
+
+#slider{
+  width: 100%;
+  height: 810px;
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+  }
+  h2{
+    color: white;
+    text-align: center;
+    padding-top: 15%;
+    max-width: 780px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 800;
+  }
+  h3{
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    max-width: 780px;
+    margin: 0 auto;
+    padding-top: 5%;
+    font-style: normal;
+  }
+  h4{
+    background: @lightBlue;
+    padding: 20px 0;
+    font-weight: 600;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: white;
+    max-width: 525px;
+    margin: 70px auto 0 auto;
+    border-radius: 5px;
+  }
+}
+
+#slogan{
+  margin: 120px 0;
+  h2{
+    font-size: 40px;
+    color: @ultramarine;
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 0;
+    font-weight: 600;
+  }
+  h3{
+    max-width: 730px;
+    font-size: 23px;
+    color: #434041;
+    padding: 40px 0;
+    margin:  0 auto;
+  }
+  p{
+    font-weight: 200;
+    max-width:1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+#presupuesto{
+  width: 100%;
+  background: @lightBlue;
+  color: white;
+  padding: 80px 0;text-align: left;
+  h2{
+    font-size: 43px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  h3{
+    font-size: 29px;
+    font-weight: 500;
+    color: @DarkBlue;
+    text-align: left;
+    font-style: normal;
+  }
+  p{
+    font-weight: lighter;
+  }
+}
+
+
+#papeles{
+  width: 100%;
+  height: 400px;
+  .col-md-5{
+    background: #EDEEF0;
+    color: @DarkBlue;
+    height: 100%;
+    .textos{
+      width: 70%;
+      padding: 50px 0;
+      margin: 0 0 0 auto;
+      h4{
+        font-weight: 400;
+        color: @DarkBlue;
+        padding: 50px 0;
+        span{
+          font-weight: 500;
+        }
+      }
+      hr{
+        border: 1px solid @lightBlue;
+        width: 100px;
+        margin:  0 auto;
+      }
+    }
+  }
+  .col-md-7{
+    height: 100%;
+    padding-left: 100px;
+    .textos{
+      width: 80%;
+      padding: 50px 0;
+      margin: auto 0 0 0;
+      h3{
+        font-size: 43px;
+        color: @lightBlue;
+        font-weight: 700;
+        text-align: left;
+      }
+      p{
+        font-weight: 400;
+      }
+      button{
+        background: @DarkBlue;
+        color: white;
+        font-size: 26px;
+        text-transform: uppercase;
+        font-weight: 500;
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px 0;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+#banner2{
+  width: 100%;
+  height: 600px;
+  background: url('../sources/images/img_credito2.png')center center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  h2{
+    font-weight: 700;
+    font-size: 43px;
+    margin-top: 7%;
+  }
+  .requisito{
+    padding-top: 6%;
+    .col-md-6{
+      img{
+        max-width: 60px;
+        display: inline-block;
+        padding-top: 60px;
+      }
+      ul{
+        width: 80%;
+        display: inline-block;
+        vertical-align: top;
+        list-style: none;
+        margin-left: 30px;
+        h3{
+          color: @lightBlue;
+          letter-spacing: 4px;
+          text-align: left;
+          text-transform: uppercase;
+        }
+        div.icon{
+          background: url('../sources/images/iconos.png') -420px -93px;
+          background-repeat: no-repeat;
+          width: 5%;
+          height: 20px;
+          display: inline-block;
+          padding-right: 30px;
+          vertical-align: top;
+        }
+        li{
+          padding-right: 30px;
+          display: inline-block; width: 93%;
+          margin-bottom: 5px;
+          font-weight: 400;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+#regla{
+  h2{
+    font-size: 45px;
+    color: @medimBlue;
+    font-weight: 700;
+    padding: 40px 0;
+
+  }
+  .section-regla{
+    padding: 20px 60px;
+    h4{
+      font-size: 20px;
+      color: @lightBlue;
+      padding: 20px 0;
+    }
+    .img-regla{
+      background: url('../sources/images/iconos.png');
+      background-repeat: no-repeat;
+      width: 100px;
+      height: 90px;
+      margin: 0 auto;
+      text-align: center;
+      &.regla02{
+        background-position: -100px 0;
+      }
+      &.regla03{
+        background-position: -200px 0;
+      }
+      &.regla04{
+        background-position: 0 -90px;
+      }
+      &.regla05{
+        background-position: -100px -90px;
+      }
+      &.regla06{
+        background-position: -200px -90px;
+      }
+    }
+  }
+}
+
+#estrenar{
+  width: 100%;
+  background: @lightBlue;
+  color: white;
+  h2{
+    font-size: 35px;
+    padding: 30px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}

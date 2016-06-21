@@ -141,22 +141,24 @@ header#main-header .navbar-brand {
   font-weight: 800;
 }
 #slider h3 {
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 45px;
+  font-weight: 400;
   color: white;
-  max-width: 780px;
+  max-width: 1000px;
   margin: 0 auto;
   padding-top: 5%;
   font-style: normal;
+  text-transform: inherit;
 }
-#slider h4 {
+#slider button {
   background: #009FCB;
-  padding: 20px 0;
+  padding: 10px 20px 5px 20px;
   font-weight: 600;
   font-size: 35px;
   text-transform: uppercase;
   color: white;
-  max-width: 525px;
+  display: block;
+  width: 40%;
   margin: 70px auto 0 auto;
   border-radius: 5px;
 }
@@ -396,4 +398,61 @@ header#main-header .navbar-brand {
   font-size: 26px;
   margin-bottom: 100px;
   border-radius: 5px;
+}
+footer {
+  width: 100%;
+  background: #0B2340;
+  border-top: 30px solid #0F549F;
+  color: white;
+}
+footer .credito-footer .back {
+  margin-top: 30px;
+  background: #2C4B6E;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+footer .credito-footer .back .logo-crea {
+  background: url('../sources/images/iconos.png') -300px -10px;
+  width: 83px;
+  height: 30px;
+  display: inline-block;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+}
+footer .credito-footer .back .legal {
+  display: inline-block;
+  width: 83%;
+  padding: 20px;
+  vertical-align: top;
+  font-size: 12px;
+}
+footer .credito-footer .back .legal p {
+  margin: 0;
+}
+footer .credito-footer .logos {
+  margin-top: 30px;
+}
+footer .credito-footer .logos ul li {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background-repeat: no-repeat;
+  margin-right: 40px;
+}
+footer .credito-footer .logos ul li.logo-empresa {
+  background: url('../sources/images/iconos.png') -300px -50px;
+}
+footer .credito-footer .logos ul li.logo-great {
+  background: url('../sources/images/iconos.png') -300px -90px;
+  width: 90px;
+  height: 36px;
+}
+footer .credito-footer .logos ul li.logo-social {
+  background: url('../sources/images/iconos.png') -300px -149px;
+  width: 90px;
+  height: 36px;
+}
+footer .credito-footer .logos ul li.logo-creal {
+  background: url('../sources/images/iconos.png') -390px -5px;
+  width: 30px;
 }

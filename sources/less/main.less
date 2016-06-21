@@ -38,7 +38,17 @@ img{
 }
 
 
-@import "media";
+.swiper-button-prev{
+  background: url('../sources/images/arrow-left.png') no-repeat !important;
+  width: 40px;
+  height: 40px;
+}
+
+.swiper-button-next{
+  background: url('../sources/images/arrow-right.png') no-repeat !important;
+  width: 40px;
+  height: 40px;
+}
 
 
 header#main-header {
@@ -134,7 +144,8 @@ header#main-header {
   width: 100%;
   background: @lightBlue;
   color: white;
-  padding: 80px 0;text-align: left;
+  padding: 80px 0;
+  text-align: left;
   h2{
     font-size: 43px;
     font-weight: 600;
@@ -364,6 +375,7 @@ footer{
   background: @DarkBlue;
   border-top: 30px solid @medimBlue;
   color: white;
+  padding: 40px 0;
   .credito-footer{
     .back{
       margin-top: 30px;
@@ -381,6 +393,7 @@ footer{
       .legal{
         display: inline-block;
         width: 83%;
+        max-width: 430px;
         padding: 20px;
         vertical-align: top;
         font-size: 12px;
@@ -388,35 +401,122 @@ footer{
           margin: 0;
         }
       }
-    }
-    .logos{
-      margin-top: 30px;
-      ul{
-        li{
-          display: inline-block;
-          width: 60px;
-          height: 30px;
-          background-repeat: no-repeat;
-          margin-right: 40px;
-          &.logo-empresa{
-            background: url('../sources/images/iconos.png') -300px -50px;;
-          }
-          &.logo-great{
-            background: url('../sources/images/iconos.png') -300px -90px;;
-            width: 90px;
-            height: 36px;
-          }
-          &.logo-social{
-            background: url('../sources/images/iconos.png') -300px -149px;;
-            width: 90px;
-            height: 36px;
-          }
-          &.logo-creal{
-            background: url('../sources/images/iconos.png') -390px -5px;
-            width: 30px;
+      .logos{
+        margin: 10px 0;
+        padding-bottom: 10px;
+        ul{
+          li{
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+            background-repeat: no-repeat;
+            margin-right: 40px;
+            &.logo-empresa{
+              background: url('../sources/images/iconos.png') -300px -50px;;
+            }
+            &.logo-great{
+              background: url('../sources/images/iconos.png') -300px -90px;;
+              width: 90px;
+              height: 36px;
+            }
+            &.logo-social{
+              background: url('../sources/images/iconos.png') -300px -149px;;
+              width: 90px;
+              height: 36px;
+            }
+            &.logo-creal{
+              background: url('../sources/images/iconos.png') -390px -5px;
+              width: 30px;
+            }
           }
         }
       }
     }
   }
+  .legales{
+    font-size: 15px;
+    font-weight: 500;
+    h5{
+      text-align: left;
+      font-size: 16px;
+    }
+    ul{
+      li{
+        padding-bottom: 4px;
+      }
+    }
+  }
+  .telefono{
+    .img-tel{
+      background: url('../sources/images/iconos.png') -440px -9px;
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      margin-left: 30px;
+      margin-top: 5px;
+    }
+    .tel{
+      display: inline-block;
+      width: 70%;
+      vertical-align: top;
+    }
+  }
+  .social{
+    margin-top: 30px;
+    ul{
+      li{
+        display: inline-block;
+        background: url('../sources/images/iconos.png') -370px -52px;
+        width: 35px;
+        height: 35px;
+        background-repeat: no-repeat;
+        margin-right: 30px;
+        &.icn-facebook{
+          margin-left: 30px;
+        }
+        &.icn-twitter{
+          background: url('../sources/images/iconos.png') -406px -52px;
+        }
+        &.icn-youtube{
+          background: url('../sources/images/iconos.png') -445px -52px;
+        }
+      }
+    }
+  }
+  .con-buro{
+    .buro{
+      display: inline-block;
+      background: url('../sources/images/iconos.png') -388px -95px;
+      width: 35px;
+      height: 35px;
+      background-repeat: no-repeat;
+      margin: 30px 40px 0 30px;
+    }
+    .condusef{
+      display: inline-block;
+      background: url('../sources/images/iconos.png') -386px -128px;
+      width: 67px;
+      height: 35px;
+      background-repeat: no-repeat;
+      margin: 30px 40px 0 30px;
+    }
+  }
+  .copyright{
+    font-weight: 500;
+    border-top: 2px solid white;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 40px;
+    padding: 30px;
+    .copy{
+      color: @medimBlue;
+    }
+    .costos{
+      color: white;
+      text-align: right;
+    }
+  }
 }
+
+@import "media";

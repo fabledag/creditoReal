@@ -28,79 +28,15 @@ img {
   margin: 0;
   padding: 0;
 }
-@media (max-width: 720px) {
-  .btn-general {
-    width: 100%;
-  }
-  header#main-header .navbar-default .navbar-nav li a {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    border: none;
-  }
-  header#main-header .navbar-default .navbar-nav li a:hover,
-  header#main-header .navbar-default .navbar-nav li a:active,
-  header#main-header .navbar-default .navbar-nav li a:focus {
-    color: white;
-    border-bottom: none;
-  }
-  #slider h2 {
-    font-size: 24px;
-    padding-top: 100%;
-  }
-  #packages-home #list-package {
-    padding-top: 60px;
-  }
-  #packages-home #list-package .row .col-md-4 {
-    margin-bottom: 60px;
-  }
-  #homeInfo {
-    text-align: center;
-  }
-  #homeInfo .lista-iconos {
-    padding-top: 20px !important;
-  }
-  #homeMap .data-info {
-    padding-top: 15px !important;
-  }
-  footer .legales {
-    text-align: center;
-    padding-bottom: 30px;
-  }
-  #contact .mapContacto {
-    height: 300px;
-  }
-  #contact .formulario {
-    padding: 15px;
-  }
-  #contact .formulario .no-padding-left {
-    padding-right: 0;
-  }
-  #contact .formulario .no-padding-right {
-    padding-left: 0;
-    padding-top: 15px;
-  }
-  #contact button {
-    width: 100%;
-    display: block !important;
-    margin: 0 auto;
-    float: none;
-    max-width: none;
-  }
-  #soluciones #banner-quote .container {
-    padding: 20px;
-  }
-  #soluciones #banner-quote .container span {
-    top: 10% !important;
-  }
-  #soluciones #banner-quote .container p.quote {
-    font-size: 17px;
-  }
-  #nosotros .banner-nosotros {
-    height: 700px;
-  }
-  #modalLogin .modal-content {
-    width: 100%;
-  }
+.swiper-button-prev {
+  background: url('../sources/images/arrow-left.png') no-repeat !important;
+  width: 40px;
+  height: 40px;
+}
+.swiper-button-next {
+  background: url('../sources/images/arrow-right.png') no-repeat !important;
+  width: 40px;
+  height: 40px;
 }
 header#main-header .navbar {
   background: #0B2340;
@@ -404,6 +340,7 @@ footer {
   background: #0B2340;
   border-top: 30px solid #0F549F;
   color: white;
+  padding: 40px 0;
 }
 footer .credito-footer .back {
   margin-top: 30px;
@@ -422,6 +359,7 @@ footer .credito-footer .back .logo-crea {
 footer .credito-footer .back .legal {
   display: inline-block;
   width: 83%;
+  max-width: 430px;
   padding: 20px;
   vertical-align: top;
   font-size: 12px;
@@ -429,30 +367,235 @@ footer .credito-footer .back .legal {
 footer .credito-footer .back .legal p {
   margin: 0;
 }
-footer .credito-footer .logos {
-  margin-top: 30px;
+footer .credito-footer .back .logos {
+  margin: 10px 0;
+  padding-bottom: 10px;
 }
-footer .credito-footer .logos ul li {
+footer .credito-footer .back .logos ul li {
   display: inline-block;
   width: 60px;
   height: 30px;
   background-repeat: no-repeat;
   margin-right: 40px;
 }
-footer .credito-footer .logos ul li.logo-empresa {
+footer .credito-footer .back .logos ul li.logo-empresa {
   background: url('../sources/images/iconos.png') -300px -50px;
 }
-footer .credito-footer .logos ul li.logo-great {
+footer .credito-footer .back .logos ul li.logo-great {
   background: url('../sources/images/iconos.png') -300px -90px;
   width: 90px;
   height: 36px;
 }
-footer .credito-footer .logos ul li.logo-social {
+footer .credito-footer .back .logos ul li.logo-social {
   background: url('../sources/images/iconos.png') -300px -149px;
   width: 90px;
   height: 36px;
 }
-footer .credito-footer .logos ul li.logo-creal {
+footer .credito-footer .back .logos ul li.logo-creal {
   background: url('../sources/images/iconos.png') -390px -5px;
   width: 30px;
+}
+footer .legales {
+  font-size: 15px;
+  font-weight: 500;
+}
+footer .legales h5 {
+  text-align: left;
+  font-size: 16px;
+}
+footer .legales ul li {
+  padding-bottom: 4px;
+}
+footer .telefono .img-tel {
+  background: url('../sources/images/iconos.png') -440px -9px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+footer .telefono .tel {
+  display: inline-block;
+  width: 70%;
+  vertical-align: top;
+}
+footer .social {
+  margin-top: 30px;
+}
+footer .social ul li {
+  display: inline-block;
+  background: url('../sources/images/iconos.png') -370px -52px;
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  margin-right: 30px;
+}
+footer .social ul li.icn-facebook {
+  margin-left: 30px;
+}
+footer .social ul li.icn-twitter {
+  background: url('../sources/images/iconos.png') -406px -52px;
+}
+footer .social ul li.icn-youtube {
+  background: url('../sources/images/iconos.png') -445px -52px;
+}
+footer .con-buro .buro {
+  display: inline-block;
+  background: url('../sources/images/iconos.png') -388px -95px;
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  margin: 30px 40px 0 30px;
+}
+footer .con-buro .condusef {
+  display: inline-block;
+  background: url('../sources/images/iconos.png') -386px -128px;
+  width: 67px;
+  height: 35px;
+  background-repeat: no-repeat;
+  margin: 30px 40px 0 30px;
+}
+footer .copyright {
+  font-weight: 500;
+  border-top: 2px solid white;
+  width: 100%;
+  font-size: 12px;
+  margin-top: 40px;
+  padding: 30px;
+}
+footer .copyright .copy {
+  color: #0F549F;
+}
+footer .copyright .costos {
+  color: white;
+  text-align: right;
+}
+@media (max-width: 720px) {
+  header#main-header .navbar-brand {
+    float: none;
+    margin: 0 auto;
+  }
+  #slider {
+    height: 250px;
+  }
+  #slider h2 {
+    font-size: 20px;
+    padding-top: 5%;
+  }
+  #slider h3 {
+    font-size: 18px;
+    max-width: 300px;
+  }
+  #slider button {
+    width: 60%;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 0;
+  }
+  #slogan h2 {
+    font-size: 22px;
+  }
+  #slogan h3 {
+    font-size: 18px;
+  }
+  #slogan p {
+    font-size: 16px;
+  }
+  #presupuesto {
+    text-align: center !important;
+  }
+  #presupuesto h2 {
+    font-size: 30px;
+    text-align: center !important;
+  }
+  #presupuesto h3 {
+    font-size: 22px;
+    text-align: center !important;
+  }
+  #presupuesto p {
+    padding: 40px 0;
+  }
+  #papeles {
+    height: auto;
+    text-align: center !important;
+  }
+  #papeles .col-md-5 .textos {
+    margin: 0 auto;
+  }
+  #papeles .col-md-7 {
+    padding-left: 20px;
+  }
+  #papeles .col-md-7 .textos {
+    width: 100%;
+    margin: 0 auto !important;
+    padding: 40px 0;
+  }
+  #papeles .col-md-7 .textos h3 {
+    text-align: center;
+    font-size: 26px;
+    padding-bottom: 30px;
+  }
+  #papeles .col-md-7 .textos button {
+    font-size: 24px;
+    width: 70%;
+  }
+  #banner2 h2 {
+    font-size: 22px;
+  }
+  #banner2 .requisito {
+    padding-top: 3%;
+  }
+  #banner2 .requisito ul {
+    width: 100% !important;
+  }
+  #banner2 .requisito ul h3 {
+    text-align: center !important;
+  }
+  #banner2 .requisito ul .icon {
+    width: 20px !important;
+  }
+  #banner2 .requisito ul li {
+    width: 84% !important;
+  }
+  #regla h2 {
+    font-size: 28px;
+  }
+  #estrenar h2 {
+    font-size: 25px;
+    padding: 30px 0;
+  }
+  #estrenar .list-estrenar {
+    text-align: center;
+  }
+  #estrenar .list-estrenar ul li {
+    padding-bottom: 10px;
+    padding-right: 0;
+  }
+  #remate h2 {
+    font-size: 30px;
+    padding: 40px 0;
+  }
+  #remate button {
+    width: 60%;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  footer {
+    border: none;
+    padding: 0;
+    background: #0F549F;
+  }
+  footer .social ul {
+    margin-left: 50px;
+  }
+  footer .copyright {
+    border-top: none;
+    margin-top: 0;
+  }
+  footer .copyright .costos {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 12px;
+  }
 }
